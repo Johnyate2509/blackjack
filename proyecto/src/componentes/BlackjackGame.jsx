@@ -81,10 +81,10 @@ export default function BlackjackGame() {
     const playerTotal = calculateTotal(playerHand);
     const dealerTotal = calculateTotal(dealer);
 
-    if (playerTotal > 21) return "Pierde (se pasó)";
-    if (dealerTotal > 21) return "Gana (dealer se pasó)";
-    if (playerTotal > dealerTotal) return "Gana";
-    if (playerTotal < dealerTotal) return "Pierde";
+    if (playerTotal > 21) return "haz perdido (te pasaste)";
+    if (dealerTotal > 21) return "ganaste  (tallador se pasó)";
+    if (playerTotal > dealerTotal) return "Ganaste";
+    if (playerTotal < dealerTotal) return "Pierdes";
     return "Empate";
   };
 
